@@ -46,12 +46,13 @@ export default {
     '@nuxtjs/pwa',
     // https://auth.nuxtjs.org/guide/setup
     '@nuxtjs/auth-next',
+    '@nuxtjs/auth',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: 'http://backer-backend.buildwithangga.id/',
+    baseURL: 'http://backer-backend.buildwithangga.id',
   },
 
   // https://auth.nuxtjs.org/schemes/local#options
@@ -82,6 +83,29 @@ export default {
       },
     },
   },
+  // auth: {
+  //   strategies: {
+  //     local: {
+  //       endpoints: {
+  //         login: {
+  //           url: '/api/v1/sessions',
+  //           method: 'post',
+  //           propertyName: 'data.token',
+  //         },
+  //         logout: false,
+  //         user: {
+  //           url: '/api/v1/users/fetch',
+  //           method: 'get',
+  //           propertyName: 'data',
+  //         },
+  //       },
+  //       // tokenRequired: true,
+  //       // tokenType: 'bearer',
+  //       // globalToken: true,
+  //       // autoFetchUser: true,
+  //     },
+  //   },
+  // },
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
