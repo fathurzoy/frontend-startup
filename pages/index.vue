@@ -96,7 +96,7 @@
       </div>
       <div class="grid grid-cols-3 gap-4 mt-3">
         <div
-          v-for="campaign in campaigns.data"
+          v-for="campaign in campaigns.data.slice(0, 3)"
           :key="campaign.id"
           class="card-project w-full p-5 border border-gray-500 rounded-20"
         >
